@@ -41,9 +41,10 @@
     <div class="container">
       <a class="navbar-brand text-color" href="index.html"><img style="width: 150px; max-width: 100%;" src="assets/images/brmja.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-bars text-secondary mt-2"></i></span>
-      </button>
+  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span><i class="fas fa-bars text-secondary mt-2"></i></span>
+</button>
+
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
@@ -269,18 +270,23 @@
    <div class="loading">
     <div class="loader-spin"><div class="loader"></div></div>
    </div>
-   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script src="assets/js/jquery-3.2.1.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
     new WOW().init();
   </script>
+<script>
+  $(document).ready(function () {
+    $('.navbar-collapse a').click(function () {
+      $('.navbar-collapse').collapse('hide');
+    });
+  });
+</script>
 
 </body>
 
